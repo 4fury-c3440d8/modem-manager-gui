@@ -2040,7 +2040,7 @@ static void mmgui_main_tray_icon_build(mmgui_application_t mmguiapp)
 	} else if (strstr(desktop, "Unity7") != NULL) {
 		iconfilepath = g_build_filename(RESOURCE_PNG_ICONS_DIR, "modem-manager-gui.png", NULL);	
 	} else {
-		iconfilepath = g_build_filename(RESOURCE_SYMBOLIC_ICONS_DIR, "modem-manager-gui.svg", NULL);
+		iconfilepath = g_build_filename(RESOURCE_SCALABLE_ICONS_DIR, "modem-manager-gui.svg", NULL);
 	}
 	mmguiapp->window->indicator = app_indicator_new(RESOURCE_LOCALE_DOMAIN, iconfilepath, APP_INDICATOR_CATEGORY_APPLICATION_STATUS);
 	g_free(iconfilepath);
